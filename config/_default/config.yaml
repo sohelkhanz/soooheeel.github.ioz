@@ -19,6 +19,11 @@ removePathAccents: true
 ## MODULES
 ############################
 
+module:
+  imports:
+    - path: github.com/soooheeel/aaa/themes/modules/wowchemy-plugin-netlify-cms
+    - path: github.com/wowchemy/aaa/themes/modules/wowchemy-plugin-netlify
+    - path: github.com/soooheeel/aaa/themes/modules/wowchemy/v5
 
 ############################
 ## ADVANCED
