@@ -24,7 +24,7 @@ module:
     - path: /themes/modules/wowchemy-plugin-netlify-cms
     - path: /themes/modules/wowchemy-plugin-netlify
     - path: /themes/modules/wowchemy-plugin-reveal
-    - path: /themes/modules/wowchemy/v5
+    - path: /themes/modules/wowchemy
 
 ############################
 ## ADVANCED
