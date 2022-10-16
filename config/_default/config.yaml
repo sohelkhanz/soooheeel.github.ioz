@@ -28,6 +28,12 @@ module:
 ############################
 ## ADVANCED
 ############################
+cascade:
+  # Docs folder options
+  - _target:
+      path: /docs/**
+    editable: true
+    show_breadcrumb: true
 
 enableGitInfo: false
 summaryLength: 30
