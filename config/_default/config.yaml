@@ -19,12 +19,6 @@ removePathAccents: true
 ## MODULES
 ############################
 
-module:
-  imports:
-    - path: /modules/wowchemy-plugin-netlify-cms
-    - path: /modules/wowchemy-plugin-netlify
-    - path: /modules/wowchemy-plugin-reveal
-    - path: /modules/wowchemy/v5
 
 ############################
 ## ADVANCED
