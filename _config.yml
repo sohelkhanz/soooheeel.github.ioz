@@ -1,80 +1,79 @@
-# Configuration of Hugo
-# Guide: https://wowchemy.com/docs/getting-started/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+# Site
+title:              Muhammad Sohel Khan
+bio:                'Muhammad Sohel Khan is a musical artist, youtuber, photographer.'
+description:        "Muhammad Sohel Khan is a bangladeshi singer. He is also a photographer, youtuber, content creator, songwriter."
+reading_time:       true
+words_per_minute:   200
+logo:               'assets/img/sohel2.jpg'
+background:         'assets/img/back.jpeg'
+tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
+locale:             en_UK
+url:                https://mphs-edu.github.io
 
-title: Sohel Khan # Website name
-baseURL: 'https://sohelkhan.rbind.io/' # Website URL
+# Jekyll
+permalink:          /:title/
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+mathjax:            true
+sass:
+  sass_dir:         _sass
+  style:            compressed
 
-############################
-## LANGUAGE
-############################
+# Comments
+disqus_shortname:   mphs
 
-defaultContentLanguage: en
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
-removePathAccents: true
+# Social
+# if you don't have any of social below, comment the line.
+google:
+  #plus:            #username
+  analytics:       'UA-193152863-1'
+  #verify:
+  #ad-client:
+  #ad-slot:
+#bing-verify:
+email:              muhammadsohelkhan1@gmail.com
+twitter:            MuhammadSohel_K
+facebook:           Muhammad.Sohel.Khan.Sohel
+#github-url:        mphs-edu
+#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+#linkedin:          username
+#xing:              username
+instagram:          muhammad_sohel_khan
+#lastfm:            username
+#tumblr:            username
+#medium:            username
+#pinterest:         username
+#foursquare:        username
+#steam:             username
+#dribbble:          username
+youtube:            username
+#youtube-channel:   channel
+#soundcloud:        username
+#weibo:             username
+#flickr:            username
+#codepen:           username
+#keybase:           username
+#xmpp:              username@server.com
+#hackernews:        username
+#orcid:             username
+#ads:               username
+#figshare:          username
 
-############################
-## MODULES
-############################
+# Gems
+gems:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
 
-module:
-  imports:
-    - path: github.com/soooheeel/aaa/themes/modules/wowchemy-plugin-netlify-cms
-    - path: github.com/wowchemy/aaa/themes/modules/wowchemy-plugin-netlify
-    - path: github.com/soooheeel/aaa/themes/modules/wowchemy/v5
+jekyll-mentions:
+    base_url: https://github.com
 
-############################
-## ADVANCED
-############################
-cascade:
-  # Docs folder options
-  - _target:
-      path: /docs/**
-    editable: true
-    show_breadcrumb: true
-
-enableGitInfo: false
-summaryLength: 30
-paginate: 10
-enableEmoji: true
-enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
-permalinks:
-  event: '/talk/:slug/'
-  tags: '/tag/:slug/'
-  categories: '/category/:slug/'
-  publication_types: '/publication-type/:slug/'
-disableAliases: true
-outputs:
-  home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
-  section: [HTML, RSS]
-imaging:
-  resampleFilter: lanczos
-  quality: 75
-  anchor: smart
-timeout: 600000
-taxonomies:
-  tag: tags
-  category: categories
-  publication_type: publication_types
-  author: authors
-markup:
-  _merge: deep
-related:
-  threshold: 80
-  includeNewer: true
-  toLower: true
-  indices:
-    - name: tags
-      weight: 100
-    - name: categories
-      weight: 70
-security:
-  _merge: deep
-sitemap:
-  _merge: deep
-minify:
-  _merge: deep
+# Exclude list
+exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
